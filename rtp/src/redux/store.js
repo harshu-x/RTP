@@ -1,4 +1,4 @@
-import {configureStore}  from 'reduxjs/toolkit'
+import {configureStore}  from '@reduxjs/toolkit'
 
 import searchReducer from './features/searchSlice'
 export const store = configureStore({
@@ -6,4 +6,4 @@ export const store = configureStore({
     reducer :{
         search :searchReducer ,
     }
-})
+}) 
