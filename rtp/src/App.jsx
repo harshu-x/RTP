@@ -1,5 +1,6 @@
 import React from 'react'
 import { fetchGIF, fetchPhotos, fetchVideos } from './api/mediaApi'
+import SearchBar from './components/SearchBar'
 
 const App = () => {
   
@@ -7,7 +8,7 @@ const App = () => {
     <div className='h-screen w-full bg-gray-850'>
       
 
-      <button className='bg-emerald-400 px-4 py-3 m-5' 
+      {/* <button className='bg-emerald-400 px-4 py-3 m-5' 
       onClick={async ()=>{
         const data =await fetchPhotos('dog');
         console.log(data.results);
@@ -26,7 +27,10 @@ const App = () => {
       onClick={async ()=>{
         const data =await fetchGIF('nature');
         console.log(data);
-      }}>Get Videos</button>
+      }}>Get Videos</button> */}
+
+
+      <SearchBar />
     </div>
   )
 }
